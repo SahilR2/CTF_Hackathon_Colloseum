@@ -1,7 +1,6 @@
 import React from 'react';
 import NavbarComp from '../../components/NavbarComp/NavbarComp'
 import CardComp from '../../components/CardComp/CardComp';
-
 const Page = () => {
   return (
     <div className="App">
