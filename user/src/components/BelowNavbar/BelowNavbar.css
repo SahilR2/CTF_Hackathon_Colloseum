@@ -183,12 +183,12 @@
 }
 
 /* Media query for iPhone X */
-@media only screen 
+/* @media only screen 
   and (device-width: 375px) 
   and (device-height: 812px) 
   and (-webkit-device-pixel-ratio: 3) { 
-    /* Styles for iPhone X */
-}
+    
+} */
 
 @media only screen and (max-device-width: 667px) and (orientation: portrait) {
   /* Your CSS rules specific to iPhone SE portrait mode */
