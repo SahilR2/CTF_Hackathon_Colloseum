@@ -1,8 +1,14 @@
 import React from "react";
 import './Registration.css';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar1/Navbar";
 function Reg() {
+    const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/login');
+  };
     return(
         
         <div id="registration-section" className="body">
@@ -48,7 +54,7 @@ function Reg() {
                 </div>
                 </form>
                 
-                <button id='reg-button' type="submit">Submit</button>
+                <button id='reg-button' type="submit" onClick={handleButtonClick}>Submit</button>
                 <div className="register-register-link">
                     <p>Already have an account? <Link to='/login'>Login</Link></p>
                 </div>
