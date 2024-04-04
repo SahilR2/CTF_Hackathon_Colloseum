@@ -56,7 +56,7 @@ const CardComp = ({ title,domain,qdes, description, alertDesc, hintUrl, correctA
         }
         updatedScoreArr = [...userScore.scorearr, updatedScore]; 
             try {
-                const response = await fetch(${process.env.REACT_APP_API_URL}/updateScore/${userId}, {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/updateScore/${userId}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ const CardComp = ({ title,domain,qdes, description, alertDesc, hintUrl, correctA
     useEffect(() => {
         const fetchUserScore = async () => {
             try {
-                const res = await fetch(${process.env.REACT_APP_API_URL}/getspecificuser/${userId});
+                const res = await fetch(`${process.env.REACT_APP_API_URL}/getspecificuser/${userId}`);
                 if (!res.ok) {
                     throw new Error("Cannot get user");
                 }
